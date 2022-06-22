@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    min-height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Staatliches', cursive;
+    color: rgb(238, 224, 224);
+
+}
+.landing{
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: url('./imgs/ocean1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    max-width: 100%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    padding: 0rem 5rem;
+}
+#logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+.nav-links li{
+    padding-left: 21px;
+    display: inline;
+    list-style: none;
+    font-size: 2rem;
+}
+.nav-links button{
+    color: white;
+    font-size:2rem;
+    background-color: transparent;
+    border-style:none;
+}
+.nav-links button:hover{
+    color: rgb(102, 28, 92);
+    font-size: 2.1rem;
+}
+.big-text{
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main p{
+    font-size: 2rem;
+    width: 450px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.intro{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.into-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-size: 5rem;
+    background: linear-gradient(to top ,rgb(233, 216, 216), rgb(240, 61, 61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*.slider{
+    background-color: rgb(75, 80, 85);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}*/
+section {
+    min-height: 100vh;
+    max-width: 100%;
+
+}
+#s1{
+    background:linear-gradient(to bottom,rgb(30, 29, 97),rgb(219, 226, 156));
+}
+#s2{
+    background:linear-gradient(to bottom,rgb(219, 226, 156),rgb(62, 185, 50));
+}
+#s3{
+    background:linear-gradient(to bottom,rgb(62, 185, 50),rgb(211, 231, 99));
+}
+#contact{
+    background:linear-gradient(to bottom,rgb(211, 231, 99),rgb(192, 38, 17));
+
+}
+#about{
+    background:linear-gradient(to bottom,rgb(192, 38, 17),rgb(235, 138, 187));
+
+}
+.reveal{
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    position: relative;
+    transform: translate(80%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translate(5%,50%);
+    opacity: 1;
+}
+.reveal h2{
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+
+}
+.reveal h1{
+    font-size: 2.4rem;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-60%);
+    
+}
