@@ -30,12 +30,15 @@ nav{
     justify-content: space-between;
     min-height: 10vh;
     padding: 0rem 5rem;
+    
 }
+
 #logo{
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
 }
 .nav-links li{
+    left:130px;
     padding-left: 21px;
     display: inline;
     list-style: none;
@@ -119,29 +122,88 @@ section {
     background:linear-gradient(to bottom,rgb(192, 38, 17),rgb(235, 138, 187));
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reveal{
     color: rgb(0, 0, 0);
     letter-spacing: 5px;
-    position: relative;
-    transform: translate(80%);
     opacity: 0;
     transition: 1s all ease;
+    position: absolute;
+    top: 120vh;
+    left: 10vw;
+
+
 }
   
 .reveal.active{
-    transform: translate(5%,50%);
     opacity: 1;
+    
 }
-.reveal h2{
+.reveal h1,h2{
     font-size: 1.6rem;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
+    letter-spacing: 4px;
 
 }
-.reveal h1{
-    font-size: 2.4rem;
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-60%);
-    
+
+
+
+
+
+.burger .line1{    
+    background-color: white;
+    height: 2px;
+    width: 8px;
+}
+.burger .line2{    
+    background-color: white;
+    height: 3px;
+    width: 8px;
+}
+.burger .line3{    
+    background-color: white;
+    height: 3px;
+    width: 8px;
+}
+.burger div{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .nav-links li{
+        display: none;
+    }
+    .burger div{
+        display: flex;
+    }
+}
+
+
+
+
+/*sticky navbar*/
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+    justify-content: space-between;
 }
